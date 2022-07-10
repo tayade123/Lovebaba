@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp"
+    tools:context=".MainActivity3">
+
+    <TextView
+        android:id="@+id/tx1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Love Find"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:padding="15dp"
+        android:textSize="30dp"/>
+
+    <EditText
+        android:id="@+id/edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tx1"
+        android:hint="Male Name"
+        android:padding="15dp" />
+
+    <EditText
+        android:id="@+id/edit1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edit"
+        android:hint="Female Name"
+        android:padding="15dp" />
+
+    <ImageView
+        android:id="@+id/img3"
+        android:layout_width="wrap_content"
+        android:layout_height="439dp"
+        android:layout_below="@id/edit1"
+        android:layout_marginTop="0dp"
+        android:src="@drawable/lohggfxx" />
+
+    <EditText
+        android:id="@+id/ed1"
+        android:layout_width="296dp"
+        android:layout_height="64dp"
+        android:layout_below="@+id/edit1"
+        android:layout_alignEnd="@+id/img3"
+        android:layout_alignBottom="@+id/img3"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="96dp"
+        android:layout_marginTop="196dp"
+        android:layout_marginEnd="81dp"
+        android:textAlignment="center"
+        android:textSize="30dp"
+        android:layout_marginBottom="177dp" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:onClick="showResult"
+        android:id="@+id/button"
+        android:text="Get Find"
+        android:layout_below="@id/img3"
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>
